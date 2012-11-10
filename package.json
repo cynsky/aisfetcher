@@ -1,0 +1,14 @@
+{
+  "name": "aisfetcher",
+  "description": "Command line tool to fetch & filter real-time AIS stream data",
+  "version": "0.0.1",
+  "author": "Matthias Jaros <mjaros@mjaros.com>",
+  "preferGlobal": "true",
+  "bin": {
+    "aisfetcher": "./bin/aisfetcher.js"
+  },
+  "dependencies": {
+    "connect": "2.6.x",
+    "optimist": "0.3.x"
+  }
+}
