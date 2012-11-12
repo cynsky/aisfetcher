@@ -7,7 +7,7 @@ Aisfetcher is a Node.js command line tool to fetch & filter real-time data from 
     $ git clone git@github.com:mjaros/aisfetcher.git
     $ cd aisfetcher
     $ npm install
-    $ npm link
+    $ sudo npm link
 
 ## Usage
 
