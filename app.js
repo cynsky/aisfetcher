@@ -20,8 +20,10 @@ var reconnectionCount = 0;
 exports.init = function(options) {
   host = options.host;
   port = options.port;
-  key = options.filter.split(':')[0];
-  value = options.filter.split(':')[1];
+  if (options.filter != null) {
+    key = options.filter.split(':')[0];
+    value = options.filter.split(':')[1];
+  }
   connectToAISStream();  
 }
 
@@ -96,5 +98,8 @@ function parseStreamMessage(message) {
     if (json[key] == value) {
       console.log(JSON.stringify(json));
     }
+  }
+  else {
+    console.log(JSON.stringify(json));
   }
 }
